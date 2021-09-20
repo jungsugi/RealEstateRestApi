@@ -1,0 +1,24 @@
+|===
+|Path|Type|Description
+
+|`+[].product_id+`
+|`+Number+`
+|상품 아이디
+
+|`+[].title+`
+|`+String+`
+|상품 명
+
+|`+[].total_investing_amount+`
+|`+Number+`
+|총 모집 금액
+
+|`+[].my_invest_amount+`
+|`+Number+`
+|나의 투자 금액
+
+|`+[].invest_date+`
+|`+String+`
+|투자 일시
+
+|===

@@ -1,0 +1,10 @@
+[source,http,options="nowrap"]
+----
+POST /api/products/361/my HTTP/1.1
+Content-Type: application/json
+X-USER-ID: 321
+Accept: application/json
+Host: localhost:8080
+
+amount=1000
+----

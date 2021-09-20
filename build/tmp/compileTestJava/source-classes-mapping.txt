@@ -1,0 +1,18 @@
+com/sooyoung/kakaopay/service/InvestServiceTest.java
+ com.sooyoung.kakaopay.service.InvestServiceTest
+com/sooyoung/kakaopay/service/UserServiceTest.java
+ com.sooyoung.kakaopay.service.UserServiceTest
+com/sooyoung/kakaopay/repository/InvestInfoRepositoryTest.java
+ com.sooyoung.kakaopay.repository.InvestInfoRepositoryTest
+com/sooyoung/kakaopay/repository/UserRepositoryTest.java
+ com.sooyoung.kakaopay.repository.UserRepositoryTest
+com/sooyoung/kakaopay/KaKaopayApplicationTests.java
+ com.sooyoung.kakaopay.KaKaopayApplicationTests
+com/sooyoung/kakaopay/constants/Descriptor.java
+ com.sooyoung.kakaopay.constants.Descriptor
+com/sooyoung/kakaopay/service/ProductServiceTest.java
+ com.sooyoung.kakaopay.service.ProductServiceTest
+com/sooyoung/kakaopay/repository/ProductRepositoryTest.java
+ com.sooyoung.kakaopay.repository.ProductRepositoryTest
+com/sooyoung/kakaopay/repository/InvestLogRepositoryTest.java
+ com.sooyoung.kakaopay.repository.InvestLogRepositoryTest

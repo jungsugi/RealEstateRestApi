@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 60초마다 설정 파일의 변경을 확인 하여 변경시 갱신 -->
+<configuration scan="true" scanPeriod="60 seconds"> <!--springProfile 태그를 사용하면 logback 설정파일에서 복수개의 프로파일을 설정할 수 있다. -->
+	<springProperty scope="context" name="ROOT_LOG_LEVEL" source="logging.level.root" /> <!-- log file path -->
+	<property name="LOG_PATH" value="./log" /> <!-- log file name -->
+	<property name="LOG_FILE_NAME" value="kakaopay" />
+	<property name="ERR_LOG_FILE_NAME" value="kakaopay_err" /> 
+	
+	<!-- 로그패턴: 로그레벨 날짜 [쓰레드 정보] [클래스명:소스라인] 메시지 (줄바꿈) -->
+	<property name="LOG_PATTERN" value="%d{yy-MM-dd HH:mm:ss} [%thread] [%logger{3}:%line] %highlight([%-5level])  - %msg%n" />
+	 
+	 <!-- 콘솔 로그 처리 -->
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>${LOG_PATTERN}</pattern>
+		</encoder>
+	</appender> 
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender"> <!-- File Appender --> 
+		<file>${LOG_PATH}/${LOG_FILE_NAME}.log</file> <!-- 파일경로 설정 -->
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">  <!-- 출력패턴 설정 -->
+			<pattern>${LOG_PATTERN}</pattern>
+		</encoder> 
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> <!-- Rolling 정책 -->
+			<fileNamePattern>${LOG_PATH}/${LOG_FILE_NAME}.%d{yyyy-MM-dd}_%i.log</fileNamePattern>  <!-- .gz,.zip 등을 넣으면 자동 일자별 로그파일 압축 -->
+			<timeBasedFileNamingAndTriggeringPolicy	class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+				<maxFileSize>10MB</maxFileSize> <!-- 파일당 최고 용량 kb, mb, gb -->
+			</timeBasedFileNamingAndTriggeringPolicy> 
+			<maxHistory>30</maxHistory> <!-- 일자별 로그파일 최대 보관주기(~일), 해당 설정일 이상된 파일은 자동으로 제거 <MinIndex>1</MinIndex> <MaxIndex>10</MaxIndex> -->
+		</rollingPolicy>
+	</appender> 
+	
+	<!-- 에러 로그 처리 -->
+	<appender name="Error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>error</level>
+			<onMatch>ACCEPT</onMatch> <!-- error 레벨 일치 시 -->
+			<onMismatch>DENY</onMismatch> <!-- error 레벨 불일치 시 -->
+		</filter>
+		<file>${LOG_PATH}/${ERR_LOG_FILE_NAME}.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>${LOG_PATTERN}</pattern>
+		</encoder> <!-- Rolling 정책 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> <!-- .gz,.zip 등을 넣으면 자동 일자별 로그파일 압축 -->
+			<fileNamePattern>${LOG_PATH}/${ERR_LOG_FILE_NAME}.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> <!-- 파일당 최고 용량 kb, mb, gb -->
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy> <!-- 일자별 로그파일 최대 보관주기(~일), 해당 설정일 이상된 파일은 자동으로 제거 -->
+			<maxHistory>60</maxHistory>
+		</rollingPolicy>
+	</appender>
+	
+	<!-- ELK 사용 시 -->
+	<!-- <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+		<destination>127.0.0.1:5000</destination>
+		<encoder class ="net.logstash.logback.encoder.LogstashEncoder"></encoder> logstash-logback-encdoer 의존성 추가 필요
+	</appender> -->
+	
+	<!-- root레벨 설정 -->
+	<root level="${ROOT_LOG_LEVEL}">
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
+		<appender-ref ref="Error" />
+		<!-- <appender-ref ref="logstash" /> --> <!-- ELK 사용 시 -->
+	</root> 
+	
+	<!-- CommonsRequestLoggingFilter DEBUG 모드 필수 -->
+	<logger name="org.springframework.web.filter.CommonsRequestLoggingFilter" level="DEBUG" additivity="false">
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
+		<appender-ref ref="Error" />
+	</logger>
+</configuration>

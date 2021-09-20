@@ -1,0 +1,8 @@
+[source,bash]
+----
+$ http --form POST 'http://localhost:8080/api/products/361/my' \
+    'Content-Type:application/json' \
+    'X-USER-ID:321' \
+    'Accept:application/json' \
+    'amount=1000'
+----

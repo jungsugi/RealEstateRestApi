@@ -1,0 +1,36 @@
+|===
+|Path|Type|Description
+
+|`+[].product_id+`
+|`+Number+`
+|상품 아이디
+
+|`+[].title+`
+|`+String+`
+|상품 명
+
+|`+[].total_investing_amount+`
+|`+Number+`
+|총 모집 금액
+
+|`+[].current_invest_amount+`
+|`+Number+`
+|현재 모집 금액
+
+|`+[].current_user_cnt+`
+|`+Number+`
+|현재 투자자 수
+
+|`+[].status+`
+|`+String+`
+|투자 상품 상태
+
+|`+[].started_at+`
+|`+String+`
+|투자 시작 일시
+
+|`+[].finished_at+`
+|`+String+`
+|투자 종료 일시
+
+|===

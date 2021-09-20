@@ -1,0 +1,251 @@
+21-08-08 17:34:25 [main] [c.s.k.KakaopayApplication:55] [34m[INFO ][0;39m  - Starting KakaopayApplication using Java 1.8.0_221 on DESKTOP-TEF2OAG with PID 27744 (E:\workspace\202107-sooyoung199-naver.com\build\libs\202107-sooyoung199-naver.com-0.0.1-SNAPSHOT.jar started by LG in E:\workspace\202107-sooyoung199-naver.com\build\libs)
+21-08-08 17:34:25 [main] [c.s.k.KakaopayApplication:659] [34m[INFO ][0;39m  - No active profile set, falling back to default profiles: default
+21-08-08 17:34:28 [main] [o.s.d.r.c.RepositoryConfigurationDelegate:132] [34m[INFO ][0;39m  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-08-08 17:34:28 [main] [o.s.d.r.c.RepositoryConfigurationDelegate:201] [34m[INFO ][0;39m  - Finished Spring Data repository scanning in 196 ms. Found 4 JPA repository interfaces.
+21-08-08 17:34:28 [main] [o.m.s.m.ClassPathMapperScanner:44] [31m[WARN ][0;39m  - No MyBatis mapper was found in '[com.sooyoung.kakaopay]' package. Please check your configuration.
+21-08-08 17:34:30 [main] [o.s.b.w.e.t.TomcatWebServer:108] [34m[INFO ][0;39m  - Tomcat initialized with port(s): 8080 (http)
+21-08-08 17:34:30 [main] [o.a.c.h.Http11NioProtocol:173] [34m[INFO ][0;39m  - Initializing ProtocolHandler ["http-nio-8080"]
+21-08-08 17:34:31 [main] [o.a.c.c.StandardService:173] [34m[INFO ][0;39m  - Starting service [Tomcat]
+21-08-08 17:34:31 [main] [o.a.c.c.StandardEngine:173] [34m[INFO ][0;39m  - Starting Servlet engine: [Apache Tomcat/9.0.50]
+21-08-08 17:34:31 [main] [o.a.c.c.C.[.[.[/]:173] [34m[INFO ][0;39m  - Initializing Spring embedded WebApplicationContext
+21-08-08 17:34:31 [main] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] [34m[INFO ][0;39m  - Root WebApplicationContext: initialization completed in 5153 ms
+21-08-08 17:34:31 [main] [o.s.w.f.CommonsRequestLoggingFilter:242] [39m[DEBUG][0;39m  - Filter 'commonsRequestLoggingFilter' configured for use
+21-08-08 17:34:31 [main] [o.h.j.i.u.LogHelper:31] [34m[INFO ][0;39m  - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-08-08 17:34:32 [main] [o.h.Version:44] [34m[INFO ][0;39m  - HHH000412: Hibernate ORM core version 5.4.32.Final
+21-08-08 17:34:32 [main] [o.h.a.c.Version:56] [34m[INFO ][0;39m  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+21-08-08 17:34:32 [main] [c.z.h.HikariDataSource:110] [34m[INFO ][0;39m  - HikariPool-1 - Starting...
+21-08-08 17:34:33 [main] [c.z.h.HikariDataSource:123] [34m[INFO ][0;39m  - HikariPool-1 - Start completed.
+21-08-08 17:34:33 [main] [o.h.d.Dialect:175] [34m[INFO ][0;39m  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+21-08-08 17:34:34 [main] [o.h.e.t.j.p.i.JtaPlatformInitiator:52] [34m[INFO ][0;39m  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21-08-08 17:34:34 [main] [o.s.o.j.LocalContainerEntityManagerFactoryBean:437] [34m[INFO ][0;39m  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-08-08 17:34:35 [main] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] [31m[WARN ][0;39m  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-08-08 17:34:36 [main] [o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105] [31m[WARN ][0;39m  - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+21-08-08 17:34:36 [main] [o.a.c.h.Http11NioProtocol:173] [34m[INFO ][0;39m  - Starting ProtocolHandler ["http-nio-8080"]
+21-08-08 17:34:36 [main] [o.s.b.w.e.t.TomcatWebServer:220] [34m[INFO ][0;39m  - Tomcat started on port(s): 8080 (http) with context path ''
+21-08-08 17:34:36 [main] [c.s.k.KakaopayApplication:61] [34m[INFO ][0;39m  - Started KakaopayApplication in 11.947 seconds (JVM running for 12.755)
+21-08-08 17:35:37 [http-nio-8080-exec-1] [o.a.c.c.C.[.[.[/]:173] [34m[INFO ][0;39m  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-08-08 17:35:37 [http-nio-8080-exec-1] [o.s.w.s.DispatcherServlet:525] [34m[INFO ][0;39m  - Initializing Servlet 'dispatcherServlet'
+21-08-08 17:35:37 [http-nio-8080-exec-1] [o.s.w.s.DispatcherServlet:547] [34m[INFO ][0;39m  - Completed initialization in 1 ms
+21-08-08 17:35:37 [http-nio-8080-exec-1] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [GET /api/products, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"4149aaa7-2c3c-4749-bb08-09a0b44660d7", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive"]]
+21-08-08 17:35:37 [http-nio-8080-exec-1] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [GET /api/products, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"4149aaa7-2c3c-4749-bb08-09a0b44660d7", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive"]]
+21-08-08 17:35:37 [http-nio-8080-exec-1] [o.a.c.c.C.[.[.[.[dispatcherServlet]:175] [1;31m[ERROR][0;39m  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.sooyoung.kakaopay.config.CustomException: can't find userId !] with root cause
+com.sooyoung.kakaopay.config.CustomException: can't find userId !
+	at com.sooyoung.kakaopay.config.UserArgumentResolver.resolveArgument(UserArgumentResolver.java:34)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-08-08 17:49:43 [http-nio-8080-exec-4] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [GET /api/products, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"127e32bb-9edb-4f05-ba50-a6713f67a14f", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive"]]
+21-08-08 17:49:43 [http-nio-8080-exec-4] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [GET /api/products, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"127e32bb-9edb-4f05-ba50-a6713f67a14f", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive"]]
+21-08-08 17:54:04 [http-nio-8080-exec-7] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/my?productId=1&amount=100000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"fe1a83a3-2156-4219-b8da-0b139bd1b60e", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:54:04 [http-nio-8080-exec-7] [o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] [31m[WARN ][0;39m  - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21-08-08 17:54:04 [http-nio-8080-exec-7] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/my?productId=1&amount=100000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"fe1a83a3-2156-4219-b8da-0b139bd1b60e", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:55:44 [http-nio-8080-exec-10] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/1?amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"040af7e6-ac48-42c7-8d5b-4d021bef019b", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:55:44 [http-nio-8080-exec-10] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/1?amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"040af7e6-ac48-42c7-8d5b-4d021bef019b", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:56:54 [http-nio-8080-exec-3] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/?productId=1&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"4fa69c58-8109-4ef1-a26f-f92ffb3a2af1", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:56:54 [http-nio-8080-exec-3] [o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] [31m[WARN ][0;39m  - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21-08-08 17:56:54 [http-nio-8080-exec-3] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/?productId=1&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"4fa69c58-8109-4ef1-a26f-f92ffb3a2af1", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:57:09 [http-nio-8080-exec-4] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/my/?productId=1&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"74e89521-0f1d-40f3-8786-1546d1f78f61", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:57:09 [http-nio-8080-exec-4] [o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] [31m[WARN ][0;39m  - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21-08-08 17:57:09 [http-nio-8080-exec-4] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/my/?productId=1&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"74e89521-0f1d-40f3-8786-1546d1f78f61", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:58:00 [http-nio-8080-exec-5] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/my/?productId=1&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"d8b08c39-01d5-4bdb-9808-0b47a07dedcd", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:58:00 [http-nio-8080-exec-5] [o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] [31m[WARN ][0;39m  - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21-08-08 17:58:00 [http-nio-8080-exec-5] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/my/?productId=1&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"d8b08c39-01d5-4bdb-9808-0b47a07dedcd", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:59:53 [http-nio-8080-exec-8] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/?productId=1&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"fdee53d6-dee1-48ff-8dca-d69d93e96747", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 17:59:53 [http-nio-8080-exec-8] [o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] [31m[WARN ][0;39m  - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21-08-08 17:59:53 [http-nio-8080-exec-8] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/?productId=1&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"fdee53d6-dee1-48ff-8dca-d69d93e96747", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:00:09 [http-nio-8080-exec-9] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/?productId=1&my=&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"0d050f8d-608b-449d-b34e-5dca1f0483de", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:00:09 [http-nio-8080-exec-9] [o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] [31m[WARN ][0;39m  - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21-08-08 18:00:09 [http-nio-8080-exec-9] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/?productId=1&my=&amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"0d050f8d-608b-449d-b34e-5dca1f0483de", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:01:06 [http-nio-8080-exec-10] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/?productId=1&amount=50000/my, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"7c55e068-6d78-4a73-ad35-36c362b6ad10", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:01:06 [http-nio-8080-exec-10] [o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] [31m[WARN ][0;39m  - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21-08-08 18:01:06 [http-nio-8080-exec-10] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/?productId=1&amount=50000/my, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"7c55e068-6d78-4a73-ad35-36c362b6ad10", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:01:42 [http-nio-8080-exec-2] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/1/my?amount=50000&productId=1, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"0eb49a9b-6a7e-41f7-bf19-d8e0d4cf581c", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:01:42 [http-nio-8080-exec-2] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/1/my?amount=50000&productId=1, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"0eb49a9b-6a7e-41f7-bf19-d8e0d4cf581c", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:02:48 [http-nio-8080-exec-4] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/2/my?amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"2c1d0f45-c30e-4bb7-95ab-c8824955e8da", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:02:48 [http-nio-8080-exec-4] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/2/my?amount=50000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"2c1d0f45-c30e-4bb7-95ab-c8824955e8da", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:03:30 [http-nio-8080-exec-5] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/3/my?amount=1250000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"f3ad9686-5f48-4ca2-92d6-2f7aec52f0e5", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:03:30 [http-nio-8080-exec-5] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/3/my?amount=1250000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"f3ad9686-5f48-4ca2-92d6-2f7aec52f0e5", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:03:30 [http-nio-8080-exec-5] [o.a.c.c.C.[.[.[.[dispatcherServlet]:175] [1;31m[ERROR][0;39m  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.sooyoung.kakaopay.config.CustomException: can't find proceed ProductId !] with root cause
+com.sooyoung.kakaopay.config.CustomException: can't find proceed ProductId !
+	at com.sooyoung.kakaopay.service.invest.InvestServiceImpl.lambda$investProduct$1(InvestServiceImpl.java:51)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at com.sooyoung.kakaopay.service.invest.InvestServiceImpl.investProduct(InvestServiceImpl.java:51)
+	at com.sooyoung.kakaopay.controller.ProductContoller.investProduct(ProductContoller.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-08-08 18:03:50 [http-nio-8080-exec-7] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/4/my?amount=1250000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"ed8afedc-6b34-4a45-b001-aab7ad46c621", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:03:50 [http-nio-8080-exec-7] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/4/my?amount=1250000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"ed8afedc-6b34-4a45-b001-aab7ad46c621", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:03:50 [http-nio-8080-exec-7] [o.a.c.c.C.[.[.[.[dispatcherServlet]:175] [1;31m[ERROR][0;39m  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.sooyoung.kakaopay.config.CustomException: can't find proceed ProductId !] with root cause
+com.sooyoung.kakaopay.config.CustomException: can't find proceed ProductId !
+	at com.sooyoung.kakaopay.service.invest.InvestServiceImpl.lambda$investProduct$1(InvestServiceImpl.java:51)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at com.sooyoung.kakaopay.service.invest.InvestServiceImpl.investProduct(InvestServiceImpl.java:51)
+	at com.sooyoung.kakaopay.controller.ProductContoller.investProduct(ProductContoller.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-08-08 18:04:05 [http-nio-8080-exec-9] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/5/my?amount=1250000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"c722cb18-8232-4016-97d0-9aa87c4afb46", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:04:05 [http-nio-8080-exec-9] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/5/my?amount=1250000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"c722cb18-8232-4016-97d0-9aa87c4afb46", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:04:46 [http-nio-8080-exec-10] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/5/my?amount=250000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"4977aad9-c045-4f9e-9552-2a6a73d7c5cf", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:04:46 [http-nio-8080-exec-10] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/5/my?amount=250000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"4977aad9-c045-4f9e-9552-2a6a73d7c5cf", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:05:38 [http-nio-8080-exec-2] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/1/my?amount=3000000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"2", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"b8b0d7c9-ace3-44c3-8679-dac643faab62", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:05:38 [http-nio-8080-exec-2] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/1/my?amount=3000000, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"2", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"b8b0d7c9-ace3-44c3-8679-dac643faab62", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:06:20 [http-nio-8080-exec-1] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [POST /api/products/my, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"2", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"cd45a06f-4a45-4e31-a456-eaef6d871a26", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:06:20 [http-nio-8080-exec-1] [o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] [31m[WARN ][0;39m  - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+21-08-08 18:06:20 [http-nio-8080-exec-1] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [POST /api/products/my, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"2", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"cd45a06f-4a45-4e31-a456-eaef6d871a26", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive", content-length:"0"]]
+21-08-08 18:06:25 [http-nio-8080-exec-3] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [GET /api/products/my, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"2", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"5654f08e-901d-4b74-849f-aa4feac2a3e1", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive"]]
+21-08-08 18:06:25 [http-nio-8080-exec-3] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [GET /api/products/my, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"2", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"5654f08e-901d-4b74-849f-aa4feac2a3e1", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive"]]
+21-08-08 18:06:36 [http-nio-8080-exec-4] [o.s.w.f.CommonsRequestLoggingFilter:47] [39m[DEBUG][0;39m  - Before request [GET /api/products/my, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"b6972469-ad24-449f-bac6-c57a0de0e592", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive"]]
+21-08-08 18:06:36 [http-nio-8080-exec-4] [o.s.w.f.CommonsRequestLoggingFilter:55] [39m[DEBUG][0;39m  - After request [GET /api/products/my, client=0:0:0:0:0:0:0:1, headers=[x-user-id:"1", user-agent:"PostmanRuntime/7.28.3", accept:"*/*", postman-token:"b6972469-ad24-449f-bac6-c57a0de0e592", host:"localhost:8080", accept-encoding:"gzip, deflate, br", connection:"keep-alive"]]
+21-08-08 21:32:07 [HikariPool-1 housekeeper] [c.z.h.p.HikariPool:788] [31m[WARN ][0;39m  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h41m31s171ms33?s600ns).

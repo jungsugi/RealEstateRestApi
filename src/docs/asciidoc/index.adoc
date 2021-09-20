@@ -1,0 +1,88 @@
+= Server Task REST API Guide
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+= REST API
+== 기본 정보
+|===
+| Verb | Usage
+
+| `GET`
+| Used to retrieve a resource
+
+| `POST`
+| Used to create a new resource
+
+| `PUT`
+| Used to update an existing resource, including partial updates
+
+| `DELETE`
+| Used to delete an existing resource
+|===
+
+== Error Code
+|===
+|코드 |메세지 |설명 및 조치방안
+
+|101
+|INVAILD_USER_ID_REQUEST_HEADER
+|유효하지 않은 X-USER-ID 값입니다.
+
+|102
+|CAN_NOT_FIND_USER_ID
+|DB에 조회되지 않는 유저id 입니다.
+
+|103
+|CAN_NOT_FIND_PRODUCT_ID
+|DB에 조회되지 않는 진행중인 상품id입니다.
+
+|104
+|CAN_NOT_OVER_MAX_AMOUNT
+|최대 금액 이상으로 투자할 수 없습니다.
+
+|105
+|NOT_FOUND_PRODUCT_LIST
+|전체 상품 데이터가 존재하지 않습니다.
+
+|===
+
+== 상품
+=== PRODUCT.01 전체 투자 상품 조회
+
+.request
+include::{snippets}\success-get-products\http-request.adoc[]
+
+.response
+include::{snippets}\success-get-products\http-response.adoc[]
+
+.response-fields
+include::{snippets}\success-get-products\response-fields.adoc[]
+
+
+=== PRODUCT.02 나의 투자 상품 조회
+
+.request
+include::{snippets}\success-get-my-products\http-request.adoc[]
+
+.response
+include::{snippets}\success-get-my-products\http-response.adoc[]
+
+.response-fields
+include::{snippets}\success-get-my-products\response-fields.adoc[]
+
+
+
+=== PRODUCT.03 상품 투자하기
+
+.request
+include::{snippets}\success-invest-product\http-request.adoc[]
+
+.response
+include::{snippets}\success-invest-product\http-response.adoc[]
+
+.response-fields
+include::{snippets}\success-invest-product\response-fields.adoc[]

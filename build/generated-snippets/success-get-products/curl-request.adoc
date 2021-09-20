@@ -1,0 +1,7 @@
+[source,bash]
+----
+$ curl 'http://localhost:8080/api/products' -i -X GET \
+    -H 'Content-Type: application/json' \
+    -H 'X-USER-ID: 323' \
+    -H 'Accept: application/json'
+----

@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1075
+
+[{"product_id":1,"title":"부동산투자1","total_investing_amount":10000000,"current_invest_amount":0,"current_user_cnt":0,"status":"Open","started_at":"2021-05-01T00:00:00","finished_at":"2021-12-01T00:00:00"},{"product_id":2,"title":"부동산투자2","total_investing_amount":2000000,"current_invest_amount":0,"current_user_cnt":0,"status":"Open","started_at":"2021-07-01T00:00:00","finished_at":"2022-03-01T00:00:00"},{"product_id":5,"title":"신용투자 투자 5","total_investing_amount":19000000,"current_invest_amount":0,"current_user_cnt":0,"status":"Open","started_at":"2020-01-01T00:00:00","finished_at":"2025-02-01T00:00:00"},{"product_id":6,"title":"신용투자 투자 6","total_investing_amount":2000000,"current_invest_amount":0,"current_user_cnt":0,"status":"Open","started_at":"2021-02-01T00:00:00","finished_at":"2022-01-01T00:00:00"},{"product_id":363,"title":"부동산투자","total_investing_amount":50000,"current_invest_amount":0,"current_user_cnt":0,"status":"Open","started_at":"2021-08-08T17:44:51.806","finished_at":"2021-08-08T17:45:51.806"}]
+----

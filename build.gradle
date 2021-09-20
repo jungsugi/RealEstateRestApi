@@ -1,0 +1,61 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id "org.asciidoctor.convert" version "1.5.9.2"
+}
+
+group = 'com.sooyoung'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'	//jpa, jdbc 占쏙옙 占쏙옙占쏙옙占싹곤옙 占쏙옙占쏙옙.
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
+	implementation 'org.ehcache:ehcache:3.8.0'
+	implementation 'javax.cache:cache-api:1.0.0' // expiration 占쏙옙占쏙옙占� 占쏙옙占쏙옙 占십울옙
+	
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'mysql:mysql-connector-java'
+	annotationProcessor 'org.projectlombok:lombok'
+	
+	asciidoctor 'org.springframework.restdocs:spring-restdocs-asciidoctor'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'	/*JUnit5 import*/
+	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc' // for Spring Rest Docs
+	testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+ext {
+    snippetsDir = file('build/generated-snippets') // 해당 경로에 asciidoc 문서인 스니펫 생성
+}
+
+test {
+    outputs.dir snippetsDir
+	useJUnitPlatform()
+}
+
+asciidoctor {
+    inputs.dir snippetsDir 
+    dependsOn test 
+}
+
+bootJar { // 생성된 rest docs 문서를 jar 안에 패키징
+    dependsOn asciidoctor
+    from ("${asciidoctor.outputDir}/html5") {
+        into 'static/docs'
+    }
+}
